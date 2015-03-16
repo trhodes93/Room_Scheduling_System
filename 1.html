@@ -1,0 +1,42 @@
+<html>
+<body>
+<h4>---------------------------------------------------------------------------------------------------------</h4>
+<h1>UNA ROOM RESERVATION SYSTEM</h1>
+<h4>---------------------------------------------------------------------------------------------------------</h4>
+<h3>RESERVATION DETAILS</h3>
+<form action="save2.php" method="post">
+Select a Building: <select
+<option class="building" name="building"></option>
+<option value="Invalid Building Selection - PLEASE CHOOSE A VALID BUILDING.">Please select a building...</option>
+<option value="Bibb Graves">Bibb Graves</option>
+<option value="Commons">Commons</option>
+<option value="Floyd">Floyd</option>
+<option value="Gulliot University Center">Gulliot University Center</option>
+<option value="Keller Hall">Keller Hall</option>
+</select>
+<p>
+Select a Room Type: <select
+<option class="type" name="types"></option>
+<option value="Invalid Room Selection - PLEASE CHOOSE A VALID ROOM TYPE.">Please select a room type...</option>
+<option value="Classroom">Classroom</option>
+<option value="Computer Lab">Computer Lab</option>
+<option value="Conference Room">Conference Room</option>
+<option value="Lecture Hall">Lecture Hall</option>
+</select>
+</p><p>
+Which day do you need the room? (please use the format: 01/01/2015)
+  <input type="date" name="needroom" min="2015-02-14" max="9999-01-01">
+  </p><p>
+What time do you need the room?<br>
+<p>
+  BEGINNING TIME: <input type="text" name="begintime"><br><br>
+  ENDING TIME: <input type="text" name="endtime"><br>
+ </p>
+</p>
+
+<input type="submit" value="Confirm your reservation">
+
+
+</form>
+</body>
+</html>
